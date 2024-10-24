@@ -1,0 +1,110 @@
+:root {
+  --color-primario: #3498db;
+  /* Azul */
+  --color-secundario: #2ecc71;
+  /* Verde */
+  --color-acento: #e74c3c;
+  /* Rojo */
+  --color-fondo: #f4f4f4;
+  /* Gris claro */
+  --color-texto: #333333;
+  /* Gris oscuro */
+  --color-texto-claro: #ffffff;
+  /* Blanco */
+}
+
+/* Paleta de colores para el modo oscuro */
+.darkmode {
+  --color-primario: #2980b9;
+  /* Azul oscuro */
+  --color-secundario: #27ae60;
+  /* Verde oscuro */
+  --color-acento: #c0392b;
+  /* Rojo oscuro */
+  --color-fondo: #1e1e1e;
+  /* Negro/gris oscuro */
+  --color-texto: #ecf0f1;
+  /* Gris claro */
+  --color-texto-claro: #ffffff;
+  /* Blanco */
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+
+  }
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-fondo);
+}
+
+/* dejar el footer siempre abajo sin importar el contenido */
+/* .grid {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: 1fr auto 1fr;
+} */
+
+header,
+footer {
+  text-align: center;
+  background-color: var(--color-acento);
+  padding: 24px;
+}
+
+header,
+section,
+footer {
+  color: var(--color-texto);
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 18px;
+}
+
+.theme-switch {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  border: 1px solid #eee;
+  padding: 5px;
+  border-radius: 8px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.theme-switch img {
+  width: 3rem;
+}
+
+.container {
+  max-width: 500px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+section {
+  background-color: var(--color-primario);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+section h2 {
+  margin-bottom: 10px;
+}
+
+footer p {
+  padding: 25px;
+}
